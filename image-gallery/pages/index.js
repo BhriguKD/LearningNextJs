@@ -15,15 +15,16 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-8">Gallery</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {photos.map((photo) => (
-          <div key={photo.id} className="relative w-full h-64">
-            <Image
-              src={photo.urls.regular}
-              alt={photo.alt_description || "Unsplash Image"}
-              fill
-              className="object-cover rounded-lg"
-              priority={false}
-            />
-          </div>
+          <div key={photo.id} className="relative w-full h-64 group overflow-hidden rounded-lg">
+  <Image
+    src={photo.urls.regular}
+    alt={photo.alt_description || "Unsplash Image"}
+    fill
+    className="object-cover transform group-hover:scale-105 transition duration-300 ease-out"
+    priority={false}
+  />
+</div>
+
         ))}
       </div>
     </main>
