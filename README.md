@@ -1,5 +1,5 @@
-#Mini Projects to Learn Nextjs
+# Mini Projects to Learn Nextjs
 
-  ##ImageGallery
+  ## ImageGallery
   - Unsplash API
   - Nextjs components
